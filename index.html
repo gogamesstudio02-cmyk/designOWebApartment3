@@ -6,7 +6,6 @@
     <title>Unity WebGL Player | apartment_02</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="reactBridge.js"></script>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -58,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/designOWEB 3 uncompressed.loader.js";
+      var loaderUrl = buildUrl + "/bb0d9ecdb05db3e84da20bd14a4f84dc.loader.js";
       var config = {
-        dataUrl: buildUrl + "/designOWEB 3 uncompressed.data",
-        frameworkUrl: buildUrl + "/designOWEB 3 uncompressed.framework.js",
-        codeUrl: buildUrl + "/designOWEB 3 uncompressed.wasm",
+        dataUrl: buildUrl + "/03b72f20dc744c68e5be4b979317b538.data",
+        frameworkUrl: buildUrl + "/9ffeb8e68932499ef6b7c01fb8d304d8.framework.js",
+        codeUrl: buildUrl + "/38cb1b3c835c41261c959fe2c7c3cdcb.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "apartment_02",
@@ -120,7 +119,6 @@
                 fullscreenButton.onclick = () => {
                   unityInstance.SetFullscreen(1);
                 };
-                  setupReactBridge(unityInstance); // 👈 connect React bridge
               }).catch((message) => {
                 alert(message);
               });
